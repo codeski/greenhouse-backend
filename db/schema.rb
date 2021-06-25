@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2021_06_24_214708) do
     t.string "light_requirements"
     t.string "description"
     t.string "location"
+    t.string "image"
+    t.string "water_amount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

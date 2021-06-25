@@ -8,6 +8,8 @@ class CreatePlants < ActiveRecord::Migration[6.1]
       t.string :light_requirements
       t.string :description
       t.string :location
+      t.string :image
+      t.string :water_amount
 
       t.timestamps
     end
