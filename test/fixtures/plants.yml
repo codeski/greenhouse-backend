@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  species: MyString
+  water_days: 1
+  last_watered: 2021-06-24 15:47:08
+  light_requirements: MyString
+  description: MyString
+  location: MyString
+
+two:
+  nickname: MyString
+  species: MyString
+  water_days: 1
+  last_watered: 2021-06-24 15:47:08
+  light_requirements: MyString
+  description: MyString
+  location: MyString
