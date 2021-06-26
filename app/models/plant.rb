@@ -1,2 +1,4 @@
 class Plant < ApplicationRecord
+
+
 end
