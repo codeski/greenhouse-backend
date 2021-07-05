@@ -8,6 +8,7 @@ class PlantsController < ApplicationController
 
     def create
         plant = Plant.new(plant_params)
+        plant.last_watered = DateTime.now()
         plant.save
 
         render json: plant.to_json(except: [:created_at, :updated_at])
@@ -16,20 +17,19 @@ class PlantsController < ApplicationController
     def update 
         plant = Plant.find_by(id: params[:id])
         plant.last_watered = DateTime.now()
-        plant.update(plant_params)
+        plant.save
         render json: plant.to_json(except: [:created_at, :updated_at])
     end
 
     def destroy
         plant = Plant.find_by(id: params[:id])
-        # byebug
         plant.destroy 
         render json: {message: "Deleted plant from backend"}
     end
 
     private
 
-    def plant_params(plant)
+    def plant_params
         params.require(:plant).permit(:nickname, :species, :water_days, :last_watered, :light_requirements, :description, :location, :water_amount, :image)
     end
 
