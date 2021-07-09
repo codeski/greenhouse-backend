@@ -16,3 +16,5 @@ cd greenhouse-frontend
 npm i
 npm start
 ```
+## Link to License
+[MIT](https://choosealicense.com/licenses/mit/)
