@@ -1,5 +1,11 @@
 # README
 
+## GreenHouse 
+"GreenHouse" is a sigle page application written using React/Redux library framework frontend and a Rails API backend server. It's an application to remind you when to water your plants.
+
+video tutorial - https://www.youtube.com/watch?v=JWjmDtFHcqg
+
+
 ## To get your GreenHouse Backend API Running
 
 ```
